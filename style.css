@@ -68,6 +68,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------*/
+body{
+   background-color: #691a1a;
+}
 .container{
    width: 60%;
    margin: 0 auto;
@@ -75,7 +78,9 @@ h1, h2, h3, h4, h5, h6 {
    margin-top: 3%;
 }
 .title{
-   font-size: 3vw;
+   color: #FFFFFF;
+text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+   font-size: 2vw;
    margin-bottom: 3%;
    padding-bottom: 1%;
    border-bottom: 3px solid rgb(100, 103, 107);
@@ -92,8 +97,9 @@ h1, h2, h3, h4, h5, h6 {
    padding: 15 20px;
    display: block;
    cursor: pointer;
-   font-size: 2vw;
-   padding-bottom: 2%;
+   font-size: 1.5vw;
+   padding-bottom: 1.5%;
+   
 }
 .ddown-input{
    -webkit-appearance: none;
@@ -101,6 +107,7 @@ h1, h2, h3, h4, h5, h6 {
    width: 0;
    height: 0;
    position: absolute;
+   
 }  
 .ddown-input1{
    -webkit-appearance: none;
@@ -112,14 +119,15 @@ h1, h2, h3, h4, h5, h6 {
 .ddown-input:hover + .ddown-body{
    display: block;
 }
+.ddown-input:checked + .ddown-body{
+   display: block;
+}
 .ddown-item{
    margin-bottom: 2%;
 }
-.ddown-input1:checked + .ddown-body{
-   display: block;
-}
 .ddown-menu:hover{
    color: #000;
+   text-shadow: #FC0 1px 0 10px;
 }
 .ddown-item{
    border-bottom: 3px solid rgb(100, 103, 107); 
@@ -128,5 +136,24 @@ h1, h2, h3, h4, h5, h6 {
    width: 30%;
 }
 .ddown-body{
-   margin-top: 3%;
+   margin-top: 1.5%;
+   margin-bottom: 1.5%;
+}
+
+.label1{
+   display: relative;
+   display: flex;
+   justify-content: center;
+   justify-content: space-between;
+   
+}
+.label1:hover .ion{
+   transform: rotate(-45deg);
+   transform-origin: center;
+   transition: all 1s;
+}
+.ion{
+   right: 20%;
+   position: absolute;
+   transition: all 1s;
 }
