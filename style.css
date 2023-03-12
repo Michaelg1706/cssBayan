@@ -93,6 +93,7 @@ h1, h2, h3, h4, h5, h6 {
    display: block;
    cursor: pointer;
    font-size: 2vw;
+   padding-bottom: 2%;
 }
 .ddown-input{
    -webkit-appearance: none;
@@ -112,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {
    display: block;
 }
 .ddown-item{
-   margin-bottom: 10px;
+   margin-bottom: 2%;
 }
 .ddown-input1:checked + .ddown-body{
    display: block;
@@ -121,7 +122,11 @@ h1, h2, h3, h4, h5, h6 {
    color: #000;
 }
 .ddown-item{
-   padding-bottom: 1%;
-   
    border-bottom: 3px solid rgb(100, 103, 107); 
+}
+.image{
+   width: 30%;
+}
+.ddown-body{
+   margin-top: 3%;
 }
